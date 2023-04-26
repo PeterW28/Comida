@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/miImagen"
+        android:layout_width="450dp"
+        android:layout_height="412dp"
+        android:src="@drawable/kungfu"
+        app:shapeAppearanceOverlay="@style/radius"
+        />
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="Search food..."
+        android:iconifiedByDefault="false"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/redondo"
+        android:backgroundTint="@color/white"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="420dp"
+        android:orientation="vertical">
+        <View
+            android:layout_width="48dp"
+            android:layout_height="10dp"
+            android:background="@drawable/view"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/naranja"
+
+            android:layout_marginBottom="25dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Comida Rapida"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Solo por hoy esta oferta de comida rapida"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:textColor="@color/gris"
+            android:layout_marginBottom="15dp"
+            />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:text="$5.00"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/naranja"
+            android:background="@drawable/redondo_naranja"
+            android:layout_marginHorizontal="155dp"
+            android:layout_marginBottom="10dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Llega por tus dumplings mi compa que estan tan buenos\n
+con el ingrediente secreto del señor Ping son el alimento\n
+favorito del mismismo Guerrero Dragon,\n 100% real no fake"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:textColor="@color/gris"
+            android:layout_marginBottom="20dp"
+            />
+
+        <Button
+            android:layout_width="340dp"
+            android:layout_height="65dp"
+            android:hint="Ordena Ahora"
+            android:textColorHint="@color/white"
+            android:layout_marginHorizontal="35dp"
+            android:backgroundTint="@color/naranja"
+            app:shapeAppearanceOverlay="@style/redondo"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            />
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
